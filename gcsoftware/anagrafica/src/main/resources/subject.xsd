@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://gcsoftware.anagrafica/entities/Subject" xmlns:tns="http://gcsoftware.anagrafica/entities/Subject"
+    elementFormDefault="qualified">
+ 
+    <!-- Subject Request Type -->
+    <xsd:element name="SubjectRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="customerId" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+ 
+    <!-- Subject Response Type -->
+    <xsd:element name="SubjectResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="customerId" type="xsd:string" />
+                <xsd:element name="firstName" type="xsd:string" />
+                <xsd:element name="lastName" type="xsd:string" />
+                <xsd:element name="personType" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+ 
+</xsd:schema>
